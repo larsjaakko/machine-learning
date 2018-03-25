@@ -62,7 +62,7 @@ def cluster_results(reduced_data, preds, centers, pca_samples):
 	fig, ax = plt.subplots(figsize = (14,8))
 
 	# Color map
-	cmap = cm.get_cmap('gist_rainbow')
+	cmap = cm.get_cmap('Paired')
 
 	# Color the points based on assigned cluster
 	for i, cluster in plot_data.groupby('Cluster'):   
